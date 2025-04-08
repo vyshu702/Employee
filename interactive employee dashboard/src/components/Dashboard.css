@@ -1,0 +1,100 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #5685b4;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Filter section */
+  .dashboard-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dashboard-filters select {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ade8fa;
+    font-size: 14px;
+    min-width: 180px;
+    transition: border-color 0.2s ease;
+  }
+  
+  .dashboard-filters select:focus {
+    border-color: #6366f1;
+    outline: none;
+  }
+  
+  /* Reset Button */
+  .reset-button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-button:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Summary Cards */
+  .dashboard-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 2rem;
+  }
+  
+  .chart-card {
+    background-color: #ade8fa;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .chart-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  /* Chart title */
+  .chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 1rem;
+  }
+  
+  /* Chart section layout */
+  .charts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 24px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Responsive chart sizing */
+  .chart-card .recharts-responsive-container {
+    width: 100% !important;
+    height: 280px !important;
+  }
+  
